@@ -66,6 +66,10 @@ Whether to restart the cron daemon after the timezone has changed.
 
 Enable tinker panic, which is useful when running NTP in a VM.
 
+    ntp_extra_options: ''
+
+A placeholder for arbitrary configuration options not exposed by the role. This will be appended as-is to the end of the NTP Config file, as long as your variable preserves formatting with a |.
+
 ## Dependencies
 
 None.
